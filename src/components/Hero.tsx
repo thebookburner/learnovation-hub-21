@@ -24,7 +24,9 @@ export const Hero = () => {
 
   return (
     <div ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-accent to-background">
-      <div className="absolute inset-0 bg-[url('/lovable-uploads/0750354a-c138-4cb0-ad18-2dff06d6e857.png')] opacity-10 bg-center bg-no-repeat bg-contain parallax" data-speed="0.2" />
+      <div className="absolute inset-0 bg-[url('/lovable-uploads/cc7e3933-325f-45b1-9798-ed58f18bf45d.png')] opacity-30 bg-center bg-cover bg-no-repeat parallax" data-speed="0.2">
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
+      </div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-4xl mx-auto animate-fade-up">
@@ -36,12 +38,12 @@ export const Hero = () => {
           <p className="text-xl md:text-2xl mb-8 text-gray-200 leading-relaxed parallax" data-speed="0.3">
             Strategic insights, self-directed growth, and technological innovation to fuel your evolution
           </p>
-          <div className="flex gap-4 justify-center parallax" data-speed="0.4">
-            <Button size="lg" className="bg-primary hover:bg-primary/90">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center parallax" data-speed="0.4">
+            <Button size="lg" className="bg-primary hover:bg-primary/90 w-full sm:w-auto">
               Get Started
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-            <Button size="lg" variant="outline">
+            <Button size="lg" variant="outline" className="w-full sm:w-auto">
               Explore My Work
             </Button>
           </div>
