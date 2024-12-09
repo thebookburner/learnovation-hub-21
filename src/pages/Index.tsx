@@ -10,16 +10,30 @@ import { PersonalIntro } from "@/components/PersonalIntro";
 import { SubscriptionOffer } from "@/components/SubscriptionOffer";
 import { UpcomingEvents } from "@/components/UpcomingEvents";
 import { CallToAction } from "@/components/CallToAction";
+import { DynamicNav } from "@/components/DynamicNav";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-accent text-white">
-      <Hero />
-      <ValueProposition />
-      <Features />
-      <Philosophy />
-      <FeaturedWork />
-      <ResourceHub />
+      <DynamicNav />
+      <section id="hero">
+        <Hero />
+      </section>
+      <section id="valueProposition">
+        <ValueProposition />
+      </section>
+      <section id="features">
+        <Features />
+      </section>
+      <section id="philosophy">
+        <Philosophy />
+      </section>
+      <section id="featuredWork">
+        <FeaturedWork />
+      </section>
+      <section id="resourceHub">
+        <ResourceHub />
+      </section>
       <Testimonials />
       <BlogInsights />
       <PersonalIntro />
