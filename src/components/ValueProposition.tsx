@@ -9,36 +9,36 @@ const audiences = [
     id: "businesses",
     icon: Building2,
     title: "Businesses",
-    description: "Transform your organization with strategic insights and innovative solutions",
+    description: "Transform your organization with strategic solutions and innovative digital experiences",
     benefits: [
-      "Data-driven decision making frameworks",
-      "Innovation acceleration programs",
-      "Strategic consulting and workshops",
-      "Custom AI implementation strategies"
+      "Brand Strategy & Digital Marketing",
+      "Custom Software Development",
+      "UI/UX Design & Product Strategy",
+      "Strategic Consulting & Workshops"
     ]
   },
   {
     id: "learners",
     icon: GraduationCap,
     title: "Lifelong Learners",
-    description: "Master self-directed learning and unlock your full potential",
+    description: "Access frameworks and resources to accelerate your professional growth",
     benefits: [
-      "Personalized learning frameworks",
-      "Cognitive enhancement techniques",
-      "Knowledge synthesis methods",
-      "Mental model development"
+      "Personal Development Programs",
+      "Knowledge Management Systems",
+      "Learning Technology Integration",
+      "Career Advancement Strategies"
     ]
   },
   {
     id: "innovators",
     icon: Lightbulb,
     title: "Innovators",
-    description: "Bridge technology and human potential to create breakthrough solutions",
+    description: "Partner with us to bring your groundbreaking ideas to life",
     benefits: [
-      "AI-driven innovation tools",
-      "Creative problem-solving methods",
-      "Future-thinking frameworks",
-      "Technology integration strategies"
+      "Product Development & MVP Design",
+      "Technology Consulting",
+      "Innovation Workshops",
+      "Go-to-Market Strategy"
     ]
   }
 ];
@@ -53,10 +53,10 @@ export const ValueProposition = () => {
       <div className="container mx-auto px-4 relative">
         <div className="text-center mb-16 animate-fade-up">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 gradient-text">
-            Empowering Growth Across Domains
+            Solutions That Drive Growth
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Discover tailored solutions that match your unique journey and aspirations
+            Tailored digital solutions and strategic consulting for businesses, innovators, and professionals
           </p>
         </div>
 
@@ -113,11 +113,11 @@ export const ValueProposition = () => {
                           {benefit}
                         </motion.div>
                       </HoverCardTrigger>
-                      <HoverCardContent className="w-80">
+                      <HoverCardContent className="w-80 bg-background border-border">
                         <div className="space-y-2">
                           <h4 className="text-sm font-semibold">{benefit}</h4>
                           <p className="text-sm text-muted-foreground">
-                            Discover how this benefit can transform your journey and accelerate your growth.
+                            Let's collaborate to achieve your goals through innovative solutions and strategic guidance.
                           </p>
                         </div>
                       </HoverCardContent>

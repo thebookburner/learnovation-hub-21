@@ -1,26 +1,26 @@
-import { Brain, Lightbulb, Rocket, Users, BookOpen, Code, Target } from "lucide-react";
+import { Brain, Code, Rocket, Users, Palette, ChartBar } from "lucide-react";
 import { Card } from "./ui/card";
 import { motion } from "framer-motion";
 
 const features = [
   {
-    title: "Self-Directed Learning",
-    description: "Master the art of learning independently with proven frameworks and strategies",
-    icon: Brain,
+    title: "Digital Strategy",
+    description: "Data-driven strategies to maximize your digital presence and ROI",
+    icon: ChartBar,
   },
   {
-    title: "Innovation Hub",
-    description: "Access cutting-edge tools and resources for creative problem-solving",
-    icon: Lightbulb,
+    title: "Creative Design",
+    description: "Stunning visuals and engaging user experiences that captivate your audience",
+    icon: Palette,
   },
   {
-    title: "Community Growth",
-    description: "Join a community of lifelong learners and innovative thinkers",
-    icon: Users,
+    title: "Technical Excellence",
+    description: "Robust development solutions built with cutting-edge technologies",
+    icon: Code,
   },
   {
-    title: "Future-Ready Skills",
-    description: "Develop the skills and mindset needed for tomorrow's challenges",
+    title: "Growth Partnership",
+    description: "Long-term collaboration focused on sustainable business growth",
     icon: Rocket,
   },
 ];
@@ -45,7 +45,7 @@ export const Features = () => {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">
-          Unlock Your Potential
+          Comprehensive Digital Solutions
         </h2>
         <motion.div 
           variants={container}
