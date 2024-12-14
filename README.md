@@ -64,6 +64,13 @@ This project is built with .
 
 Simply open [Lovable](https://lovable.dev/projects/375c61bb-3019-4f6d-ac51-f901cc07a681) and click on Share -> Publish.
 
-## I want to use a custom domain - is that possible?
+## Deploying to GitHub Pages
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+To deploy this project to GitHub Pages, follow these steps:
+
+1. Ensure your repository has a `gh-pages` branch. If not, create one.
+2. Update the `base` property in `vite.config.ts` to match your repository name.
+3. Push your changes to the `gh-pages` branch.
+4. GitHub Actions will automatically build and deploy your project to GitHub Pages.
+5. Your site will be available at `https://<your-username>.github.io/<your-repo-name>/`.
+
