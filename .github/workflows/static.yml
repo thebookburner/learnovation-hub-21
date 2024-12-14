@@ -27,48 +27,23 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # Corrected Node.js version
-          cache: 'npm'       # Or 'yarn' if you're using Yarn
-
-      - name: Install dependencies
-        run: npm ci          # Or 'yarn install'
-
-      - name: Build React App
-        run: npm run build     # Or 'yarn build'
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./dist
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-      - name: Debug - Pre-build checks
-        run: |
-          pwd
-          ls -al
-          npm --version
-          node --version
-          npx --version
+          node-version: '20' 
+          cache: 'npm'
 
       - name: Install dependencies
         run: npm ci
 
       - name: Build React App
         run: npm run build
-        continue-on-error: false  # Fail the workflow if the build fails
+        continue-on-error: false  # Fail fast if build fails
 
-      - name: Debug - Post-build checks
-        if: always() # Run even if the previous step fails. This is the most important debug step.
-        run: |
-          pwd
-          ls -al
-
-      - name: Upload artifact
+      - name: Setup Pages  # These two steps MUST be together
+        uses: actions/configure-pages@v5
+      - name: Upload artifact   #  In this order
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./build 
+          path: ./dist # Or ./build if you changed Vite's outDir
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
