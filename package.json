@@ -1,9 +1,8 @@
 {
   "name": "vite_react_shadcn_ts",
-  "private": false,
+  "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://thebookburner.github.io/learnovation-hub-21/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
