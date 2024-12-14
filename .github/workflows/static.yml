@@ -42,7 +42,7 @@ jobs:
       - name: Upload artifact   #  In this order
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist # Or ./build if you changed Vite's outDir
+          path: ./build # Or ./build if you changed Vite's outDir
 
       - name: Deploy to GitHub Pages
         id: deployment
