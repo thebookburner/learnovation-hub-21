@@ -12,7 +12,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/learnovation-hub-21/"> {/* Basename added! */}
         <Routes>
           <Route path="/" element={<Index />} />
         </Routes>
